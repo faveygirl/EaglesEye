@@ -1,0 +1,125 @@
+<html>
+<head>
+<meta charset="utf-8" />
+<title>untitled</title>
+<meta name="generator" content="Geany 1.35" />
+<link rel="stylesheet" type="text/css" href="EaglesEye.css" media="screen" />
+</head>
+    <!-- PAGE IS DIVIDED INTO TWO DIVS - LEFT AND RIGHT -->
+<body>
+		<main>
+				<div class="rectangle8"> <!-- FIRST DIV BEGINS -->
+										 <div height="180px">
+											<img class="a" alt="EaglesEye Logo" 
+												 src="https://res.cloudinary.com/eagleseye/image/upload/v1568734722/image_from_ios_cfblew.jpg">
+											<span class="a">EAGLESEYE</span>
+										</div>
+										<br>
+										<br>
+										<br>
+										<span class="b">An agency of the Independent National Electoral
+											Commission in charge of receiving complaints
+											and evidence of election irregularities directly
+											from the public.
+										</span>
+										<br>
+										<br>
+
+										<span class="b">
+											
+										<!-- BUTTON TO OPEN THE SIGN UP FORM -->
+										<button onclick="document.getElementById('id01').style.display='block'">Sign Up</button>
+
+										<!--SIGN UP POPUP FORM-->
+										<div id="id01" class="modal">
+										
+										  <form action="/action_page.php">
+											<div class="container">
+											  
+											  <label for="name">
+											  <input type="text" placeholder="Firstname" name="name" required>
+											  </label>
+											  
+											  <label for="email">
+											  <input type="text" placeholder="Enter Email" name="email" required>
+											  </label>
+
+											  <label for="psw">
+											  <input type="password" placeholder="Enter Password" name="psw" required>
+											  </label>
+											  
+											  <div class="clearfix">
+												<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+												<button type="submit" class="signupbtn">Sign up</button>
+											  </div>
+											</div>
+										  </form>
+										</div> 
+
+										</span>
+					
+			
+										<div class="a">
+											<footer>
+											<a href="#"><img id="footer1" alt="inec logo" src="https://res.cloudinary.com/eagleseye/image/upload/v1568735240/download_4_drfwbl.jpg"></a>
+											<a href="#"><img id="footer2" alt="Electoral Map of Nigeria" src="https://res.cloudinary.com/eagleseye/image/upload/v1568735620/images_q6yfsv.jpg"></a>
+											<a href="#"><img id="footer3" alt="Election Day Image" src="https://res.cloudinary.com/eagleseye/image/upload/v1568735651/images_3_yr4vcm.png"></a>
+											<a href="#"><img id="footer4" alt="A group of voters casting their vote" src="https://res.cloudinary.com/eagleseye/image/upload/v1568736631/download_5_njbijg.jpg"></a>
+											</footer>
+										</div>
+
+				</div> <!-- FIRST DIV ENDS -->
+
+				<div class="rectangle3"> <!-- SECOND DIV BEGINS -->
+										<div class="navbar">
+										  <a href="#home">Home</a>
+										  <a href="#about">About</a>
+										  <a href="#news">News</a>
+										  <a href="#media">Media</a>
+										  
+										  <div class="dropdown">
+											  <button class="droppbtn" onclick="myFunction()">Electoral Offences
+												<i class="fa fa-caret-down"></i>
+											  </button>
+											  <div class="dropdown-content" id="myDropdown">
+												<a href="#">1. Ballot Box Snatching</a>
+												<a href="#">2. Vote Buying</a>
+												<a href="#">3. Multiple Voting</a>
+											  <a href="#">4. Harassment and victimization of electoral officers. </a>
+											  <a href="#">5. Underage voting</a>
+											  <a href="#">6. Mutilation and destruction of electoral materials</a>
+											  <a href="#">7. Impersonation </a>
+											  </div>
+										  </div>
+										  
+										  <div class="dropdown">
+											  <button class="droppbtn" onclick="myFunction1()">2019 Report Stats
+												<i class="fa fa-caret-down"></i>
+											  </button>
+											  <div class="dropdown-content" id="myDropdown1">
+												<a href="#lg">1. LG</a>
+												<a href="#state">2. State</a>
+												<a href="#region">3. Region</a>
+											  </div>
+										 </div>
+										</div>
+										<!--SIGN IN FORM-->
+										<div class="login">
+										  <div class="login-triangle"></div>
+										  
+										  <h2 class="login-header">Log in</h2>
+
+										  <form class="login-container">
+											<p><input type="email" placeholder="Email"></p>
+											<p><input type="password" placeholder="Password"></p>
+											<p><input type="submit" value="Log in"></p>
+										  </form>
+									  </div>
+				</div><!-- SECOND DIV ENDS -->
+			   
+	</main>
+</body>
+	<script src="EaglesEye.js" type="text/javascript">		
+	</script>
+				
+</html>
