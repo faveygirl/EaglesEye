@@ -1,0 +1,335 @@
+body{
+	overflow: hidden;
+}
+
+body, html {
+  height: 100%;
+}
+main{
+ 
+  position: relative;
+  
+  border-radius: 15px;
+  background: linear-gradient(180deg, #595971 0%, rgba(4, 4, 32, 0) 100%);
+}
+/*style for menu */
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #83D081;
+  font-family: Roboto;
+
+}
+
+li {
+  float: left;
+}
+a{
+	text-decoration: none;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #303061;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 10%;
+  border-radius: 15px;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+  
+}
+
+.droppbtn{
+  width: 100%;
+  height: 75%;
+
+}
+
+
+.dropdown .droppbtn {
+  cursor: pointer;
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  
+}
+ .errorWrap {
+    padding: 10px;
+    margin: 0 0 20px 0;
+    background: #fff;
+    border-left: 4px solid #dd3d36;
+    -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+}
+.succWrap{
+    padding: 10px;
+    margin: 0 0 20px 0;
+    background: #fff;
+    border-left: 4px solid #5cb85c;
+    -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+}
+
+.navbar a:hover, .dropdown:hover .droppbtn, .droppbtn:focus {
+  background-color: #111;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+/* end menu style */
+/* style the container */
+.container {
+  position: relative;
+  border-radius: 15px;
+  padding: 20px 0 30px 0;
+  margin: 16px auto;
+
+} 
+.login {
+  width: 800px;
+  margin: 16px auto;
+  font-size: 16px;
+}
+/* Reset top and bottom margins from certain elements */
+.login-header,
+.login p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* The triangle form is achieved by a CSS hack */
+.login-triangle {
+  width: 0;
+  margin-right: auto;
+  margin-left: auto;
+  border: 12px solid transparent;
+  border-bottom-color: #303061;
+}
+
+.login-header {
+  background: #303061;
+  padding: 0 50px;
+  width: 50%;
+  margin: auto;
+  font-size: 1.4em;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.login-container {
+  background: #ebebeb;
+  padding: 12px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.row{
+
+
+
+
+}
+/* column layout */
+.col {
+  background: #ebebeb;
+  width: 50%;
+  margin: auto;
+  padding: 0 50px;
+  
+}
+
+.login-con{
+  border-radius: 5px;
+  position: relative;
+  width: 50%;
+  height: 100%;
+  background: radial-gradient(50% 50% at 50% 50%, 
+        rgba(33, 174, 73, 0.34) 0%, 
+        rgba(33, 174, 73, 0) 100%);
+}
+.sub{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 15px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000000;
+
+}
+/* style inputs  */
+* Every row inside .login-container is defined with p tags */
+.login p {
+  padding: 12px;
+}
+
+input {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  padding: 16px;
+  outline: 0;
+  font-family: inherit;
+  font-size: 0.95em;
+  border-radius: 15px;
+}
+
+input[type="email"],
+.login input[type="password"] {
+  background: #fff;
+  border-color: #bbb;
+  color: #555;
+}
+
+/* Text fields' focus effect */
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #888;
+}
+
+ input[type="submit"] {
+  background: #303061;
+  border-color: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+
+ input[type="submit"]:hover {
+  background: #17c;
+}
+
+/* Buttons' focus effect */
+ input[type="submit"]:focus {
+  border-color: #05a;
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #303061;
+   color: white;
+   text-align: center;
+}
+.footer img{
+  display: inline-block;
+  margin:auto;
+  margin-top: 15px;
+  width: 75px;
+  height: 66px;
+  background: rgba(33, 174, 73, 0.7);
+  /*mix-blend-mode: color-burn;*/
+  border: 2px solid #77715B;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+}
+.meter {
+    /* Reset the default appearance */
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+            
+    margin: 0 auto 1em;
+    width: 100%;
+    height: .5em;
+    
+    /* Applicable only to Firefox */
+    background: none;
+    background-color: rgba(0,0,0,0.1);
+}
+
+meter::-webkit-meter-bar {
+    background: none;
+    background-color: rgba(0,0,0,0.1);
+    width: 100%;
+    height: .5em;
+}
+
+meter[value="1"]::-webkit-meter-optimum-value { background: red; }
+meter[value="2"]::-webkit-meter-optimum-value { background: yellow; }
+meter[value="3"]::-webkit-meter-optimum-value { background: orange; }
+meter[value="4"]::-webkit-meter-optimum-value { background: green; }
+
+meter[value="1"]::-moz-meter-bar { background: red; }
+meter[value="2"]::-moz-meter-bar { background: yellow; }
+meter[value="3"]::-moz-meter-bar { background: orange; }
+meter[value="4"]::-moz-meter-bar { background: green; }
+
+.feedback {
+    color: #9ab;
+    font-size: 90%;
+    padding: 0 .25em;
+    font-family: Courgette, cursive;
+    margin-top: 1em;
+}
+
+/* Responsive layout  */
+@media screen and (max-width: 650px) {
+  .col {
+    width: 60%;
+    margin-top: 0;
+  }
+}
